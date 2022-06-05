@@ -60,6 +60,17 @@ uid, pid, ppid, tty 등을 표시해준다.
 |-p|각 프로세스 ID에 대해 한 행씩 출력|
 |command|지정한 명령어를 실행|
 
+- ### jobs로 알 수 있는 세션의 상태 값
+|상태|설명|
+|----|-----|
+|Running|작업이 일시 중단되지 않았고 종료하지 않고 계속 진행 중임|
+|Done|작업이 완료되어 0을 반환하고 종료 했음을 의미|
+|Done(code)|작업이 정상적으로 완료되었으며, 0이 아닌 코드를 반환 했음을 의미|
+|Stopped|작업이 일시 중단|
+|Stopped(SIGTSTP)|SIGTSTP 신호가 작업을 일시 중단|
+|Stopped(SIGSTOP)|SIGSTOP 신호가 작업을 일시 중단|
+|Stopped(SIGTTIN)|SIGTTIN 신호가 작업을 일시 중단|
+|Stopped(SIGTTOU)|SIGTTOU 신호가 작업을 일시 중단|
 
 
 
