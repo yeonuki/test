@@ -102,5 +102,8 @@ uid, pid, ppid, tty 등을 표시해준다.
 19) SIGSTOP(STOP) : 정지. 이 시그널 역시 잡을 수 없다.
 20) SIGTSTP(TSTP) : 키보드에 의해 발생하는 시그널로 Ctrl+Z로 생성된다.
 
+- ## VIM 에디터
+- 메크로 사용방법
+
 
 
