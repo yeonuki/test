@@ -78,11 +78,29 @@ uid, pid, ppid, tty 등을 표시해준다.
 |문법|옵션|설명|
 |----|-----|------|
 |`Kill [-signal ID] PID`|- signal ID|프로세서에게 보낼 시그널을 지정한다. 시그널은 번호로 지정 될수도 있고 시그널 이름으로 지정 될 수도 있다.|
-
-` Kill -l`
+|`Kill -l`|-l|시그널 종류를 나열한다. 시그널의 종류는 시그널 번호 순서대로 이름으로 나열한다.|
 
 - ### Kill의 시그널 종류
-1) 
+1) SIGHUP(HUP) : 연결 끊기. 프로세스의 설정파일을 다시 읽는데 사용된다.
+2) SIGINT(INT) : 인터럽트
+3) SIGQUIOT(QUIT) : 종료
+4) SIGILL(ILL) : 잘못된 명령
+5) SIGTRAP(TRAP) : 트랩 추적
+6) SIGIOT(IOT) : IOT 명령
+7) SIGBUS(BUS) : 버스 에러
+8) SIGFPE(FPE) : 고정 소수점 예외
+9) SIGKILL(KILL) : 죽이기. 이 시그널은 잡히지 않는다.
+10) SIGUSR1(USR1) : 사용자 정의 시그널 1
+11) SIGSEGV(SEGV) : 세그멘테이션 위반
+12) SIGUSR2(USR2) : 사용자 정의 시그널 2
+13) SIGPIPE(PIPE) : 읽을 것이 없는 파이프에 대한 시그널
+14) SIGALRM(ALRM) : 경고 클럭
+15) SIGTERM(TERM) : 소프트웨어 종료 시그널, 일반적으로 kill 시그널이 전송되기 전에 전송된다. 잡히는 시그널이기 때문에 종료되는 것을 트랙할 수 있다.
+16) SIGKFLT : 코프로세서 스택 실패
+17) SIGCHLD(CHLD) : 자식 프로세스의 상태변화
+18) SIGCONT(CONT) : STOP 시그널 이후 계속 진행할 때 사용
+19) SIGSTOP(STOP) : 정지. 이 시그널 역시 잡을 수 없다.
+20) SIGTSTP(TSTP) : 키보드에 의해 발생하는 시그널로 Ctrl+Z로 생성된다.
 
 
 
