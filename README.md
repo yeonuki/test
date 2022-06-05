@@ -39,8 +39,18 @@
 |p, -p|특정 PID의 프로세스를 보여준다.|
 |-u|특정 사용자의 프로세스를 보여준다.|
 
+- ### 사용예시
+> ![화면 캡처 2022-06-05 215740](https://user-images.githubusercontent.com/106866068/172053032-91e6e1e4-9b51-4f6f-80f4-9fd5cef97100.png)
+pid, cmd 등 기본적인 내용만 출력한다.
 
+> ![image](https://user-images.githubusercontent.com/106866068/172053118-ea85b73b-166f-4d51-8a66-9af08445a533.png)
+uid, pid, ppid, tty 등을 표시해준다.
 
+> ![image](https://user-images.githubusercontent.com/106866068/172053202-19465abf-feba-4b55-bbb3-355922fa0923.png)
+풀 포맷정보 외에 F, S, PRI 등 더 많은 정보를 준다.
+
+- ### jobs 명령어란?
+>  jobs 명령어는 작업의 상태를 표시하는 명령어다. 현재 쉘 세션에서 실행시킨 백그라운드 작업의 목록이 출력되며, 각 작업에는 번호가 붙어 있어 kill명령어 뒤에 '%번호' 등으로 사용할 수 있다.
 
 
 
